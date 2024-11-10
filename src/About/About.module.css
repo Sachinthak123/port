@@ -1,0 +1,147 @@
+/* General container styling */
+.container_width {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.left_about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+h5, h6, p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Objective Section */
+.about span {
+  font-weight: bold;
+  color: #3490dc;
+}
+
+/* Skills Section */
+.ulSkill {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start; /* Align skills to the left */
+}
+
+.skill {
+  padding: 10px 20px;
+  background-color: #3490dc;
+  color: white;
+  border-radius: 9999px;
+  display: inline-block;
+  margin: 5px;
+  font-size: 14px;
+}
+
+/* Qualifications Section */
+.qualification ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.qualification li {
+  margin-bottom: 10px;
+}
+
+/* Language Section */
+.language ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.language li {
+  margin-bottom: 5px;
+}
+
+/* Projects Section */
+.projects {
+  margin-top: 20px;
+}
+
+.projectName {
+  margin-bottom: 20px;
+}
+
+.projectName h4 {
+  margin-bottom: 5px;
+}
+
+/* Address Section */
+.address {
+  margin-top: 20px;
+}
+
+.currentAddress, .permanantAddress {
+  margin-bottom: 10px;
+}
+
+/* Responsive CSS */
+
+/* For small devices */
+@media (max-width: 768px) {
+  .container_width {
+    width: 90%; /* Set the width to 90% */
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h5, h6, p {
+    font-size: 14px;
+  }
+
+  .ulSkill {
+    flex-direction: column;
+    align-items: center; /* Center align skills on small screens */
+  }
+
+  .skill {
+    margin-bottom: 10px;
+    width: 100%; /* Make skills take up full width */
+    text-align: center; /* Center text */
+  }
+
+  .projects .projectName {
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 480px) {
+  .container_width {
+    width: 90%;
+    padding: 5px;
+    margin-top: 5rem;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h5, h6, p {
+    font-size: 12px;
+  }
+
+  .skill {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
